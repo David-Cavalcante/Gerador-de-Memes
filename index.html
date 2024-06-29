@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Memes</title>
+</head>
+
+<body>
+    <h1>Gerador de Memes</h1>
+
+    <div class="box">
+        <div>
+            <div id="canvasWrapper">
+            </div>
+        </div>
+
+        <div>
+            <h3><i class="fa fa-picture-o fa-fw" aria-hidden="true"></i>Pegue uma Imagem</h3>
+            <div class="box">
+                <div>
+                    <p>Com URL</p>
+                    <input id="imgURL" class="block" type="text" placeholder="Link to image" />
+                    
+                </div>
+                <div>
+                    <p></p>
+                    <input id="imgFile" type="file" accept="image/*"/>
+                     <p>Do seu Diretório</p>
+                    
+                    
+                </div>
+            </div>
+
+            <h3><i class="fa fa-commenting-o fa-fw" aria-hidden="true"></i>Texto do Meme</h3>
+            <div class="box">
+                <div>
+                    <p>Texto de cima</p>
+                    <input id="textTop" type="text" class="block" placeholder="Texto de cima" />
+                </div>
+                <div>
+                    <p>Texto de baixo</p>
+                    <input id="textBottom" type="text" class="block" placeholder="texto de baixo" />
+                </div>
+            </div>
+
+            <h3><i class="fa fa-text-height fa-fw" aria-hidden="true"></i>Tamanho do Texto</h3>
+            <div class="box">
+                <div>
+                    <p>tamanho do texto: <span id="textSizeTopOut">10</span></p>
+                    <input id="textSizeTop" type="range" min="2" max="50" step="2" />
+                </div>
+                <div>
+                    <p>botão do texto: <span id="textSizeBottomOut">10</span></p>
+                    <input id="textSizeBottom" type="range" min="2" max="50" step="2" />
+                </div>
+            </div>
+
+            <div class="box">
+                <div>
+                    <h3><i class="fa fa-eye fa-fw" aria-hidden="true"></i>Preview Size</h3>
+                    <input id="trueSize" type="checkbox"/>
+                    <label for="trueSize"><span>Mostrar como vai ficar.</span></label>
+                </div>
+
+                <div>
+                    <h3><i class="fa fa-download fa-fw" aria-hidden="true"></i>Exportar</h3>
+                    <p>Se o botão não funcionar, clique com o botão direito na imagem e salve-a</p>
+                    <p>Se você tem um celular, baixe a imagem de origem e carregue-a diretamente</p>
+                    <button id="export">Exportar!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js" defer></script>
+</body>
+
+<footer>
+    <p>Por <a href="https://www.linkedin.com/in/david-cavalcante-414573260/" target="_blank">David Cavalcante</a> Projeto GitHub <a href="https://github.com/David-Cavalcante" target="_blank">link</a>.</p>
+</footer>
+
+</html>
