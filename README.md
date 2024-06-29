@@ -35,4 +35,4 @@ Este projeto é um Gerador de Memes que permite aos usuários criar memes person
 ° `memeface`.jpg: Imagem padrão utilizada no gerador de memes (substitua com sua própria imagem).
 
 ## Autor
-Desenvolvido por David Cavalcante.
+Desenvolvido por www.linkedin.com/in/davidcavalcante
